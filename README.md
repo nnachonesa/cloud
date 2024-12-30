@@ -13,8 +13,12 @@
 * upload images from sharex
 
 ## cosas que hice hoy
+<<<<<<< HEAD
 * retornar a imagen cuando se sube
 ## ideas
 * errores propios para no dar tanta informacion a los usuarios https://www.youtube.com/watch?v=OhE-mEt37iA
 * interfaz para el user.ts
 * validar que el usuario exista con alguna libreria y tambien con la contraseña
+=======
+* retornar a imagen cuando se sube
+>>>>>>> 4f39e6cce712bfbdd1670d39aa8753fe97a83140
