@@ -21,7 +21,7 @@ app.post('/register', register)
 app.post('/logout', () => { })
 app.get('/prot', () => { })
 
-app.listen(3000, () => {
+app.listen(3001, () => {
     logger.debug("✔  La pagina ya cargo");
     connectdb(String(process.env.tok));
 })
