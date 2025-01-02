@@ -6,9 +6,11 @@ import login from '../endpoint/login'
 import dotenv from 'dotenv'
 import { logger } from '../fn/logger'
 import { connectdb } from '../void/connect'
+import PostSchema from '../schema/PostModel'
 
 
 const app = express()
+const getall:any = [];
 
 dotenv.config()
 app.use(express.json())

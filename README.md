@@ -1,7 +1,7 @@
 # cloud
 
 ## todo
-* mongoose upload
+* ~~mongoose upload~~
 * ~~id of 6 key~~
 * api to acess DESCARTADA
 * ~~get image~~
@@ -17,10 +17,10 @@
 
 ## ideas
 * errores propios para no dar tanta informacion a los usuarios https://www.youtube.com/watch?v=OhE-mEt37iA
-* interfaz para el user.ts
+* ~~interfaz para el user.ts~~
 * validar que el usuario exista con alguna libreria y tambien con la contraseña
-* retornar a imagen cuando se sube
-* interfaz para informacion publica del usuario e informacion privada del usuario
+* ~~retornar a imagen cuando se sube~~
+* ~~interfaz para informacion publica del usuario e informacion privada del usuario~~
 
 ## terminar lo que falta del video
 https://www.youtube.com/watch?v=UqnnhAZxRac&t=906s

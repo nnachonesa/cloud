@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { upload } from '../fn/uploader';
 import PostSchema from '../schema/PostModel';
-import { readFile, readFileSync } from 'fs';
+import { readFile, readFileSync, rm, rmSync } from 'fs';
 
 const router: Router = Router()
 
@@ -15,7 +15,9 @@ router.post("/upload", upload.single('image'), async (req, res) => {
                 contentType: req.file.mimetype
             },
             UserIP: req.ip
-        })).save()
+        })).save().then(async () =>{
+            await rmSync(`${req.file?.path}`);
+        })
         /**
          * req.file.path retorna la path entera de donde se guarda la imagen
          * solucion al refresco infinito: redireccionar a una pagina normal
