@@ -15,6 +15,5 @@
     "declaration":true
   },
   "exclude": ["node_modules"],
-  "include": ["api/**/*"]
+  "include": ["src/**/*"]
 }
-

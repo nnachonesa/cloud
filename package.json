@@ -1,6 +1,6 @@
 {
   "name": "ucloud",
-  "module": "index.ts",
+  "main": "src/server/index.ts",
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
     "@types/express": "^5.0.0",
