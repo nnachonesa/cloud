@@ -1,6 +1,6 @@
 {
   "name": "ucloud",
-  "main": "src/server/index.ts",
+  "main": "dist/server/index.js",
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
     "@types/express": "^5.0.0",
@@ -16,10 +16,7 @@
     "typescript": "^5.7.3"
   },
   "scripts": {
-    "start": "bun run src/server/index.ts",
-    "dev":"bun run src/server/index.ts",
-    "build":"tsc",
-    "vercel-build":"echo hello"
+    "start": "node dist/server/index.js"
   },
   "type": "module"
 }
