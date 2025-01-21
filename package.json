@@ -12,12 +12,11 @@
     "express": "^4.21.2",
     "mongoose": "^8.9.5",
     "multer": "^1.4.5-lts.1",
-    "ts-node-dev": "^2.0.0",
     "tslog": "3.3.2",
     "typescript": "^5.7.3"
   },
   "scripts": {
-    "dev": "ts-node-dev api/server/index.ts"
+    "dev": "bun run api/server/index.ts"
   },
   "type": "module"
 }
