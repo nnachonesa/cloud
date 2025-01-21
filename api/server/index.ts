@@ -7,7 +7,7 @@ import dotenv from 'dotenv'
 import { logger } from '../fn/logger'
 import { connectdb } from '../void/connect'
 import PostSchema from '../schema/PostModel'
-
+import {RESOURCE_PATH} from '../constants.ts'
 
 const app = express()
 const getall:any = [];
@@ -15,6 +15,7 @@ const getall:any = [];
 dotenv.config()
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
+app.use(express.static(RESOURCE_PATH))
 
 app.use('/', home)
 app.post('/upload', upload)

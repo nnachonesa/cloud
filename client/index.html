@@ -4,15 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Upload Form</title>
+    <link rel="stylesheet" href="/index.css">
 </head>
 
 <body>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <label for="image">Sube una imagen:</label>
-        <input type="file" name="image" id="image" accept="image/*" required>
-        <button type="submit">Subir</button>
-    </form>
+    <div class="container">
+        <div class="card">
+            <h3>Upload Video</h3>
+            <div class="drop_box">
+                <header>
+                    <h4>Select Your Video</h4>
+                </header>
+                <p>Only file type video</p>
+                <form action="/upload" method="post" enctype="multipart/form-data">  
+                  <input type="file" name="video" id="video" accept="video/*" required>
+                  <button type="submit">Subir</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -1,14 +1,19 @@
 import { Router } from 'express';
 import { HOME_PATH, LOCAL_PATH } from '../constants';
 import PostSchema from '../schema/PostModel';
+import { timeout_video } from '../fn/to_video.ts'
+
 const router = Router();
 
 router.get("/:key?", (req, res) => {
     if (!req.params.key) {
         res.sendFile(HOME_PATH);
     } else {
-        PostSchema.findOne({ key: req.params['key'] }).then((post) => {
+        PostSchema.findOne({ key: req.params['key'] }).then(async (post) => {
             if (post && post.Content?.data && post.Content?.contentType) {
+                // verifica que el coso no pase los dias 
+                if(await timeout_video(req.params['key'])) return;
+
                 // Convertimos el dato a un buffer
                 const buf = Buffer.from(post.Content.data);
 
