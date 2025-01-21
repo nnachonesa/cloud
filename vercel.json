@@ -3,7 +3,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "destination": "src/server/index.ts"
+      "dest": "src/server/index.ts"
     }
   ],
   "builds": [
