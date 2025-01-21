@@ -16,7 +16,10 @@
     "typescript": "^5.7.3"
   },
   "scripts": {
-    "dev": "bun run api/server/index.js"
+    "start": "bun run src/server/index.ts",
+    "dev":"bun run src/server/index.ts",
+    "build":"tsc",
+    "vercel-build":"echo hello"
   },
   "type": "module"
 }
