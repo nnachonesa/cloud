@@ -1,5 +1,5 @@
 {
-  "name": "cloud",
+  "name": "ucloud",
   "module": "index.ts",
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
