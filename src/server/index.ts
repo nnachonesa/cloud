@@ -26,5 +26,3 @@ app.listen(3001, () => {
     logger.debug("✔  La pagina ya cargo");
     connectdb(String(process.env.tok));
 })
-
-export default app
