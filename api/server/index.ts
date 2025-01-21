@@ -7,7 +7,7 @@ import dotenv from 'dotenv'
 import { logger } from '../fn/logger'
 import { connectdb } from '../void/connect'
 import PostSchema from '../schema/PostModel'
-import {RESOURCE_PATH} from '../constants.ts'
+import {RESOURCE_PATH} from '../constants'
 
 const app = express()
 const getall:any = [];
