@@ -2,12 +2,14 @@
   "version": 2,
   "rewrites": [
     {
-      "source": "/",
-      "destination": "src/endpoint/home"
-    },
+      "source": "/(.*)",
+      "destination": "src/server/index.ts"
+    }
+  ],
+  "builds": [
     {
-      "source": "/upload",
-      "destination": "src/endpoint/upload"
+      "src": "src/server/index.ts",
+      "use": "@vercel/node"
     }
   ]
 }

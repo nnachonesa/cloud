@@ -10,7 +10,6 @@ import PostSchema from '../schema/PostModel'
 import {RESOURCE_PATH} from '../constants'
 
 const app = express()
-const getall:any = [];
 
 dotenv.config()
 app.use(express.json())
@@ -22,7 +21,6 @@ app.post('/upload', upload)
 app.post('/login', login)
 app.post('/register', register)
 app.post('/logout', () => { })
-app.get('/prot', () => { })
 
 app.listen(3001, () => {
     logger.debug("✔  La pagina ya cargo");
