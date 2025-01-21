@@ -1,15 +1,17 @@
 {
-    "version": 2,
-    "rewrites":[{"source":"/(.*)", "destination": "/"}],
-    "routes":[{
-      "src":"/(.*)",
-      "dest":"/"
-    }],
-    "builds": [
-            {
-                "src": "src",
-                "use": "@vercel/node",
-              "config": { "includeFiles": ["dist/**"] }
-            }
-    ],  
+  "version": 2,
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ],
+  "builds": [
+    {
+      "src": "src",
+      "use": "@vercel/node",
+      "config": { "includeFiles": ["dist/**"] }
+    }
+  ]
 }
