@@ -16,7 +16,7 @@
     "typescript": "^5.7.3"
   },
   "scripts": {
-    "dev": "bun run api/server/index.ts"
+    "dev": "bun run api/server/index.js"
   },
   "type": "module"
 }
