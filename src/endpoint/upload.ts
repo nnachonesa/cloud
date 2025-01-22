@@ -5,7 +5,7 @@ import { readFile, readFileSync, rm, rmSync } from 'fs';
 
 const router: Router = Router()
 
-router.post("/upload", upload.single('video'), async (req, res) => {
+router.post("/", upload.single('video'), async (req, res) => {
     if (req.file) {
         res.status(200).redirect(`/${req.file.filename.split('.')[0]}`);
         (await PostSchema.create({

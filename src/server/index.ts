@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use(express.static(RESOURCE_PATH))
 
 app.use('/', home)
-app.post('/upload', upload)
+app.post('/', upload)
 app.post('/login', login)
 app.post('/register', register)
 app.post('/logout', () => { })
