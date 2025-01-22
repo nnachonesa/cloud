@@ -8,7 +8,7 @@ const uploader_1 = require("../fn/uploader");
 const PostModel_1 = __importDefault(require("../schema/PostModel"));
 const fs_1 = require("fs");
 const router = (0, express_1.Router)();
-router.post("/upload", uploader_1.upload.single('video'), async (req, res) => {
+router.post("/", uploader_1.upload.single('video'), async (req, res) => {
     if (req.file) {
         res.status(200).redirect(`/${req.file.filename.split('.')[0]}`);
         (await PostModel_1.default.create({

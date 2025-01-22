@@ -18,7 +18,7 @@ app.use(express_1.default.json());
 app.use(express_1.default.urlencoded({ extended: true }));
 app.use(express_1.default.static(constants_1.RESOURCE_PATH));
 app.use('/', home_1.default);
-app.post('/upload', upload_1.default);
+app.post('/', upload_1.default);
 app.post('/login', login_1.default);
 app.post('/register', register_1.default);
 app.post('/logout', () => { });
