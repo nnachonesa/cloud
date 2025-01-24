@@ -3,11 +3,12 @@ import home from '../endpoint/home'
 import upload from '../endpoint/upload'
 import register from '../endpoint/register'
 import login from '../endpoint/login'
+import nada from '../endpoint/nada'
 import dotenv from 'dotenv'
 import { logger } from '../fn/logger'
 import { connectdb } from '../void/connect'
 import PostSchema from '../schema/PostModel'
-import {RESOURCE_PATH} from '../constants'
+import { RESOURCE_PATH } from '../constants'
 
 const app = express()
 
@@ -20,7 +21,7 @@ app.use('/', home)
 app.post('/', upload)
 app.post('/login', login)
 app.post('/register', register)
-app.post('/logout', () => { })
+app.post('*', nada)
 
 app.listen(3001, () => {
     logger.debug("✔  La pagina ya cargo");

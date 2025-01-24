@@ -8,6 +8,7 @@ const home_1 = __importDefault(require("../endpoint/home"));
 const upload_1 = __importDefault(require("../endpoint/upload"));
 const register_1 = __importDefault(require("../endpoint/register"));
 const login_1 = __importDefault(require("../endpoint/login"));
+const nada_1 = __importDefault(require("../endpoint/nada"));
 const dotenv_1 = __importDefault(require("dotenv"));
 const logger_1 = require("../fn/logger");
 const connect_1 = require("../void/connect");
@@ -21,7 +22,7 @@ app.use('/', home_1.default);
 app.post('/', upload_1.default);
 app.post('/login', login_1.default);
 app.post('/register', register_1.default);
-app.post('/logout', () => { });
+app.post('*', nada_1.default);
 app.listen(3001, () => {
     logger_1.logger.debug("✔  La pagina ya cargo");
     (0, connect_1.connectdb)(String(process.env.tok));
