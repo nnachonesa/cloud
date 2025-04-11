@@ -21,8 +21,3 @@
 * validar que el usuario exista con alguna libreria y tambien con la contraseña
 * ~~retornar a imagen cuando se sube~~
 * ~~interfaz para informacion publica del usuario e informacion privada del usuario~~
-
-## terminar lo que falta del video
-https://www.youtube.com/watch?v=UqnnhAZxRac&t=906s
-
-me quede en el minuto 52 30
