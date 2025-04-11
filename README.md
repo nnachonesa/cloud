@@ -3,7 +3,7 @@ Una forma de subir imagenes e videos a mongo
 
 Este proyecto fue un poco a mano alzada sin esquematica alguna
 
-Tiene varios problemas como los archivos muy grandes, se genera un buffer muy grande y mongo no lo acepta
+Tiene varios problemas como los archivos muy grandes, se genera un buffer muy grande y mongo no lo acepta, ademas no pueden ver una preview porque se me hizo imposible subir a vercel asi que nada
 
 Ademas de que tenia mas ideas que hacer y nunca se terminaron que son las que estan abajo
 
